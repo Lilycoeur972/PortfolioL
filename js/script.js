@@ -1,18 +1,19 @@
 let menu = document.querySelector('#menu-bars');
-let header = document.querySelector('#header');
+let header = document.querySelector('header');
 
 menu.onclick = () =>{
     menu.classList.toggle('fa-times');
     header.classList.toggle('active');
-    
+  console.log("clik"); 
 }
 
+
 window.onscroll= () =>{
-    menu.classList.remote('fa-times');
-    header.classList.remote('active')
+    menu.classList.remove('fa-times');
+    header.classList.remove('active')
 }
 let cursor1 = document.querySelector('.cursor-1');
-let cursor2 = docuement.querySelector('.curor-2');
+let cursor2 = document.querySelector('.curor-2');
 
 window.onmousemove = (e) =>{
     cursor1.style.top = e.pageY +'px';
